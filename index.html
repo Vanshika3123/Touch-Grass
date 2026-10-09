@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f2a">
+  <title>Touch Grass | Outdoor Adventures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#">✿ touch grass</a>
+    <span class="privacy">● Your activity stays on this device</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE LESS SCROLLING. A LITTLE MORE LIVING.</p>
+        <h1>Close the tab.<br><em>Open the world.</em></h1>
+        <p class="hero-text">
+          Tiny outdoor adventures for real life. Pick a mood,
+          get a challenge, and give your screen a break.
+        </p>
+        <a class="text-link" href="#challenge">
+          Find my outside moment ↓
+        </a>
+      </div>
+
+      <div class="hero-art">
+        <div class="sun"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="flower flower-three">✿</div>
+        <div class="art-note">the outside<br>is calling ☀</div>
+      </div>
+    </section>
+
+    <section class="challenge-section" id="challenge">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR NEXT MINI ADVENTURE</p>
+          <h2>What feels good today?</h2>
+        </div>
+
+        <div class="streak-card">
+          <span>🌱</span>
+          <div>
+            <strong id="streakCount">0</strong>
+            <small>days growing</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label>
+          My mood
+          <select id="mood">
+            <option value="any">Surprise me</option>
+            <option value="calm">I need calm</option>
+            <option value="active">I have energy</option>
+            <option value="curious">I want to explore</option>
+            <option value="social">I want to connect</option>
+          </select>
+        </label>
+
+        <label>
+          Time I have
+          <select id="duration">
+            <option value="5">5 minutes</option>
+            <option value="15" selected>15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">An hour</option>
+          </select>
+        </label>
+
+        <label>
+          Where am I?
+          <select id="place">
+            <option value="anywhere">Anywhere</option>
+            <option value="city">City / neighbourhood</option>
+            <option value="park">Park / garden</option>
+            <option value="home">Home / balcony</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="challenge-card">
+        <div class="card-top">
+          <span class="tag" id="challengeTag">A gentle reset</span>
+          <span class="leaf-mark">✳</span>
+        </div>
+
+        <div class="challenge-content">
+          <div class="challenge-emoji" id="challengeEmoji">🌿</div>
+          <div>
+            <h3 id="challengeTitle">Notice five things growing</h3>
+            <p id="challengeDescription">
+              Step outside and find five living things.
+              Look closely at their shapes, colours, and tiny details.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-meta">
+          <span>◷ <b id="challengeTime">15 min</b></span>
+          <span>↗ No equipment needed</span>
+        </div>
+
+        <div class="card-actions">
+          <button class="button button-primary" id="newChallenge">
+            Give me another idea ↗
+          </button>
+          <button class="button button-secondary" id="completeChallenge">
+            I did it ✓
+          </button>
+        </div>
+      </div>
+
+      <div class="ai-panel">
+        <div class="ai-icon">✦</div>
+        <div class="ai-copy">
+          <strong>Make it personal with open AI</strong>
+          <p id="aiStatus">
+            Use a local Ollama model to create a challenge
+            on your computer. No paid API key needed.
+          </p>
+        </div>
+        <button class="button button-outline" id="aiChallenge">
+          Ask local AI
+        </button>
+      </div>
+
+      <p class="small-note" id="feedback" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="why-section">
+      <div>
+        <p class="eyebrow">WHY THIS EXISTS</p>
+        <h2>Made to get you<br><em>back out there.</em></h2>
+      </div>
+
+      <div class="why-copy">
+        <p>
+          Touch Grass makes the digital part short and the real-world
+          part the main event. Choose a tiny mission, put your phone
+          away, and notice the world around you.
+        </p>
+        <p>
+          <strong>Open innovation matters:</strong> a local open-weight
+          model can keep prompts on your device, lets you change models,
+          and avoids per-request AI fees. The basic challenge generator
+          works without AI or internet.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>✿ touch grass</span>
+    <span>Go gently. Stay curious. Leave no trace.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
